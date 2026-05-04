@@ -656,5 +656,35 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "e43638ce-6aa0-4b85-b27f-e1d07eb678d4",
+    image: "images/products/backpack.jpg",
+    name: "Black Backpack",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 520,
+    keywords: [
+      "backpack",
+      "laptop bag",
+      "apparel"
+    ]
+  },
+  {
+    id: "e43638ce-6aa0-4b85-b27f-e1d07eb678w2",
+    image: "images/products/umbrella.jpg",
+    name: "Pocket Umbrella - Olive Green",
+    rating: {
+      stars: 4,
+      count: 345
+    },
+    priceCents: 390,
+    keywords: [
+      "rain protection",
+      "utility",
+      "apparel"
+    ]
   }
 ];
