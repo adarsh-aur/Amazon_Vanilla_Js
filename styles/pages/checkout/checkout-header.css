@@ -101,3 +101,8 @@
     width: auto;
   }
 }
+
+
+.js-return-to-home-link {
+  padding: 2px;
+}
