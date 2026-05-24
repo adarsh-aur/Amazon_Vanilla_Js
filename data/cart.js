@@ -65,7 +65,7 @@ export function updateCartQuantity() {
         cartQuantity += item.quantity;
     });
 
-    document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+    //document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
     saveStorage();
 }
 

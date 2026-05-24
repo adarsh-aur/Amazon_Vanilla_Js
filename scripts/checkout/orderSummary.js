@@ -11,6 +11,7 @@ import { formatCurrency } from "../utils/money.js";
 import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js"
 import { deliveryOption, getDeliveryOption } from "../../data/delivery.js"
 import { renderPaymentSummary } from "./paymentSummary.js";
+import { renderCheckoutHeader } from "./checkoutHeader.js";
 
 export function renderOrderSummary () {
 
@@ -113,8 +114,10 @@ export function renderOrderSummary () {
             const { productId } = link.dataset;
             deleteProduct(productId);
 
-            const deleteElement = document.querySelector(`.js-cart-item-container-${productId}`);
-            deleteElement.remove();
+            // const deleteElement = document.querySelector(`.js-cart-item-container-${productId}`);
+            //deleteElement.remove();
+            renderCheckoutHeader();
+            renderOrderSummary();
             renderPaymentSummary();
         });
     });
