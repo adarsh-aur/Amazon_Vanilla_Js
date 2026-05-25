@@ -5,8 +5,19 @@ import { loadProducts, loadProductsFetch } from "../data/products.js";
 // import "../data/cart-class.js";
 // import "../data/backend-practice.js";
 
-loadProductsFetch().then(() => {
+async function loadPage() {
+    console.log('load page');
+    await loadProductsFetch();
+
     renderCheckoutHeader();
     renderOrderSummary();
-    renderPaymentSummary(); 
-});
+    renderPaymentSummary();
+}
+
+loadPage();
+
+// loadProductsFetch().then(() => {
+//     renderCheckoutHeader();
+//     renderOrderSummary();
+//     renderPaymentSummary();
+// });
