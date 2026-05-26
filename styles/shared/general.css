@@ -1,9 +1,13 @@
 body {
-  font-family: Roboto, Arial;
-  color: rgb(33, 33, 33);
-  /* The <body> element has a default margin of 8px
-     on all sides. This removes the default margins. */
   margin: 0;
+
+  font-family: Roboto, Arial, sans-serif;
+
+  background-color: #eaeded;
+  color: #0f1111;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* <p> elements have a default margin on the top
@@ -20,22 +24,37 @@ select {
   cursor: pointer;
 }
 
-input, select, button {
+input,
+select,
+button {
   font-family: Roboto, Arial;
 }
 
 .button-primary {
   color: rgb(33, 33, 33);
-  background-color: rgb(255, 216, 20);
-  border: 1px solid rgb(252, 210, 0);
-  border-radius: 8px;
+
+  background: linear-gradient(to bottom,
+      #f7dfa5,
+      #f0c14b);
+
+  border: 1px solid #a88734;
+
+  border-radius: 50px;
+
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+  box-shadow:
+    0 1px 2px rgba(15, 17, 17, .15);
+
+  transition:
+    background 0.2s,
+    transform 0.1s;
 }
 
 .button-primary:hover {
-  background-color: rgb(247, 202, 0);
-  border: 1px solid rgb(242, 194, 0);
+  background: linear-gradient(to bottom,
+      #f5d78e,
+      #eeb933);
 }
 
 .button-primary:active {
@@ -46,20 +65,30 @@ input, select, button {
 
 .button-secondary {
   color: rgb(33, 33, 33);
+
   background: white;
-  border: 1px solid rgb(213, 217, 217);
-  border-radius: 8px;
+
+  border: 1px solid #d5d9d9;
+
+  border-radius: 10px;
+
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+  box-shadow:
+    0 1px 2px rgba(15, 17, 17, .15);
+
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 
 .button-secondary:hover {
-  background-color: rgb(247, 250, 250);
+  background-color: #f7fafa;
+  border-color: #c7cccc;
 }
 
 .button-secondary:active {
-  background-color: rgb(237, 253, 255);
-  box-shadow: none;
+  background-color: #edfdff;
 }
 
 /* These styles will limit text to 2 lines. Anything
@@ -70,32 +99,64 @@ input, select, button {
 .limit-text-to-2-lines {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  /* Standard (non-prefixed) property for newer browsers that support the spec */
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .link-primary {
-  color: rgb(1, 124, 182);
+  color: #007185;
   cursor: pointer;
+
+  text-decoration: none;
+
+  transition: color 0.15s;
 }
 
 .link-primary:hover {
-  color: rgb(196, 80, 0);
+  color: #c7511f;
+  text-decoration: underline;
 }
 
 /* Styles for dropdown selectors. */
 select {
   color: rgb(33, 33, 33);
-  background-color: rgb(240, 240, 240);
-  border: 1px solid rgb(213, 217, 217);
+
+  background-color: #f0f2f2;
+
+  border: 1px solid #d5d9d9;
+
   border-radius: 8px;
-  padding: 3px 5px;
-  font-size: 15px;
+
+  padding: 5px 8px;
+
+  font-size: 14px;
+
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+  box-shadow:
+    0 1px 2px rgba(15, 17, 17, .15);
+
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+select:hover {
+  background-color: #e3e6e6;
 }
 
 select:focus,
 input:focus {
-  outline: 2px solid rgb(255, 153, 0);
+  outline: none;
+
+  border-color: #ff9900;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 153, 0, .35);
+}
+
+img {
+  image-rendering: auto;
 }

@@ -1,31 +1,29 @@
 .main {
-  max-width: 1100px;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 1150px;
+  padding: 0 24px;
 
-  margin-top: 140px;
-  margin-bottom: 100px;
+  margin-top: 110px;
+  margin-bottom: 80px;
 
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-title {
   font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 18px;
+  font-size: 26px;
+
+  margin-bottom: 16px;
+
+  color: #0f1111;
 }
 
 .checkout-grid {
   display: grid;
   /* Here, 1fr means the first column will take
      up the remaining space in the grid. */
-  grid-template-columns: 1fr 350px;
-  column-gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  column-gap: 18px;
 
   /* Use align-items: start; to prevent the elements
      in the grid from stretching vertically. */
@@ -44,9 +42,14 @@
 
 .cart-item-container,
 .payment-summary {
-  border: 1px solid rgb(222, 222, 222);
-  border-radius: 4px;
-  padding: 18px;
+  background: white;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+
+  padding: 20px;
+
+  box-shadow: 0 1px 2px rgba(15, 17, 17, 0.08);
 }
 
 .cart-item-container {
@@ -69,11 +72,13 @@
 }
 
 .delivery-date {
-  color: rgb(0, 118, 0);
+  color: #067d62;
+
   font-weight: 700;
-  font-size: 19px;
-  margin-top: 5px;
-  margin-bottom: 22px;
+  font-size: 18px;
+
+  margin-top: 6px;
+  margin-bottom: 18px;
 }
 
 .cart-item-details-grid {
@@ -96,23 +101,29 @@
   max-width: 100%;
   max-height: 120px;
 
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
-  margin-left: auto;
-  margin-right: auto;
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto;
 }
 
 .product-name {
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 15px;
+
+  margin-bottom: 6px;
+
+  color: #0f1111;
 }
 
 .product-price {
-  color: rgb(177, 39, 4);
+  color: #b12704;
+
   font-weight: 700;
-  margin-bottom: 5px;
+  font-size: 14px;
+
+  margin-bottom: 6px;
 }
 
 .product-quantity .link-primary {
@@ -142,8 +153,20 @@
 .delivery-option {
   display: grid;
   grid-template-columns: 24px 1fr;
-  margin-bottom: 12px;
+
+  margin-bottom: 10px;
+
   cursor: pointer;
+
+  padding: 8px;
+
+  border-radius: 6px;
+
+  transition: background 0.15s;
+}
+
+.delivery-option:hover {
+  background: #f7fafa;
 }
 
 .delivery-option-input {
@@ -163,20 +186,21 @@
 }
 
 .payment-summary-title {
+  font-size: 20px;
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
+
+  margin-bottom: 14px;
 }
 
 .payment-summary-row {
   display: grid;
-  /* 1fr auto; means the width of the 2nd column will be
-     determined by the elements inside the column (auto).
-     The 1st column will take up the remaining space. */
   grid-template-columns: 1fr auto;
 
-  font-size: 15px;
-  margin-bottom: 9px;
+  font-size: 14px;
+
+  margin-bottom: 10px;
+
+  color: #0f1111;
 }
 
 .payment-summary-money {
@@ -192,22 +216,28 @@
 }
 
 .total-row {
-  color: rgb(177, 39, 4);
+  color: #b12704;
+
   font-weight: 700;
   font-size: 18px;
 
-  border-top: 1px solid rgb(222, 222, 222);
-  padding-top: 18px;
+  border-top: 1px solid #e7e7e7;
+
+  padding-top: 14px;
+  margin-top: 10px;
 }
 
 .place-order-button {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 8px;
 
-  margin-top: 11px;
-  margin-bottom: 15px;
+  padding: 12px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-top: 12px;
 }
 
 

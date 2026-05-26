@@ -101,5 +101,4 @@ function renderProductGrid() {
             messageTimeouts[productId] = timeoutId;
         });
     });
-
 }
