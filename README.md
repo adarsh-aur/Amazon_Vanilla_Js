@@ -9,7 +9,9 @@ This project replicates real-world eCommerce functionality such as product brows
 
 ## 🎬 Demo Preview
 
-![Demo](assets/demo.gif)
+<video autoplay loop muted playsinline>
+  <source src="assets/demo.mp4" type="video/mp4">
+</video>
 ---
 
 ## 📸 Screenshots
@@ -69,6 +71,7 @@ This project replicates real-world eCommerce functionality such as product brows
 
 ## 📂 Project Structure
 
+```
 amazon-clone/
 
 ├── amazon.html
@@ -99,6 +102,7 @@ amazon-clone/
 │   ├── pages/
 │
 ├── images/
+│
 ├── assets/
 │   ├── demo.mp4
 │   ├── main.png
@@ -108,9 +112,7 @@ amazon-clone/
 │
 └── tests/
     └── jasmine/
-
-
----
+```
 
 ## 🧩 Pages Overview
 
@@ -240,6 +242,6 @@ If you use or extend this project, you are encouraged to adapt it to your own wo
 
 Contributions, improvements, and new ideas are always welcome.
 
-Github: [Adarsh Aur](https://github.com/adarsh-aur)
+Github: [adarsh-aur](https://github.com/adarsh-aur)
 
 Built with ❤️ in India.
