@@ -12,13 +12,13 @@ async function loadPage() {
         console.log('load page');
         await loadProductsFetch();
 
+        renderCheckoutHeader();
+        renderOrderSummary();
+        renderPaymentSummary();
+
     } catch (error) {
         console.log('error loading the products', error);
     }
-
-    renderCheckoutHeader();
-    renderOrderSummary();
-    renderPaymentSummary();
 }
 
 loadPage();
