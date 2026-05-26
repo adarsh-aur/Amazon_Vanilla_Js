@@ -9,8 +9,7 @@ This project replicates real-world eCommerce functionality such as product brows
 
 ## 🎬 Demo Preview
 
-[▶ Watch Demo Video](assets/demo.mp4)
-
+![Demo](assets/demo.gif)
 ---
 
 ## 📸 Screenshots
